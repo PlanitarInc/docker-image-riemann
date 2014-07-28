@@ -6,7 +6,7 @@ build:
 	docker build -t planitar/riemann .
 
 push:
-	docker build planitar/riemann
+	docker push planitar/riemann
 
 clean:
 	docker rmi -f planitar/riemann
