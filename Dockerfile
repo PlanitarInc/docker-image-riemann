@@ -13,6 +13,7 @@ ADD supervisor/ /etc/supervisor/conf.d
 
 # RUN gem install riemann-client riemann-tools riemann-dash
 RUN gem install riemann-dash
+#  RUN gem install riemann-client riemann-tools
 
 EXPOSE 5555 5556 4567
 CMD exec supervisord -n
