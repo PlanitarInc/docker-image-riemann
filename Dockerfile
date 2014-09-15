@@ -1,6 +1,6 @@
 FROM planitar/base
 
-RUN apt-get install -y curl supervisor && apt-get clean
+RUN apt-get install -y supervisor && apt-get clean
 RUN apt-get install -y ruby ruby-dev build-essential openjdk-6-jre && apt-get clean
 
 RUN mkdir -p /opt/riemann && \
