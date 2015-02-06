@@ -4,7 +4,7 @@ RUN apt-get install -y supervisor && apt-get clean
 RUN apt-get install -y ruby ruby-dev build-essential openjdk-6-jre && apt-get clean
 
 RUN mkdir -p /opt/riemann && \
-    curl http://aphyr.com/riemann/riemann-0.2.6.tar.bz2 | \
+    curl https://aphyr.com/riemann/riemann-0.2.6.tar.bz2 | \
     tar -xjvf - --strip-components 1 -C /opt/riemann
 
 ADD riemann/riemann.config /opt/riemann/etc/riemann.config
